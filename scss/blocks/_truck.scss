@@ -1,0 +1,37 @@
+.truck-section {
+    padding: 94px 0 0 0;
+}
+.laptop-truck{
+    object-fit: cover;
+}
+.tablet-truck {
+    display: none;
+}
+.mobile-truck {
+    display: none;
+}
+
+@media screen and (max-width: 1080px){
+    .laptop-truck{
+        display: none;
+    }
+    .tablet-truck{
+        display: block;
+        object-fit: cover;
+    }
+}
+@media screen and (max-width: 672px){
+    .truck-section {
+        padding: 0;
+    }
+    .laptop-truck{
+        display: none;
+    }
+    .tablet-truck{
+        display: none;
+    }
+    .mobile-truck{
+        display: block;
+        object-fit: cover;
+    }
+}

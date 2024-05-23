@@ -1,0 +1,72 @@
+
+.useful__content-wrapper{
+    background-image: url(../../images/restangle.png);
+    object-fit: cover;
+    background-size:1240px 453px;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.useful__clipath{
+    max-width: 85%;
+    height: 453px;
+    clip-path: polygon(0 0, 39% 0, 81% 100%, 0% 100%);
+    background-color: rgb(11, 117, 114);
+    display: flex;
+    align-items: center;
+}
+.useful__title-card{
+    width: 362px;
+    margin-left: 90px;
+}
+
+.useful__title{
+    color: rgb(255, 255, 255);
+    font-family: Exo 2;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: 0%;
+}
+.useful__list {
+    flex-wrap: wrap;
+    gap: 62px;
+    @include display()
+}
+.useful__item {
+    width: 447px;
+    gap: 40px;
+    @include display()
+}
+
+.useful__item-title {
+    margin-bottom: 16px;
+    @include usefulTitle()
+}
+.useful__text {
+    @include allText()
+}
+
+.useful__tablet{
+    display: none;
+}
+
+@media screen and (max-width: 1080px){
+    .useful__content-wrapper{
+        display: none;
+    }
+    .useful__tablet{
+        display: block;
+        margin-bottom: 55px;
+    }
+    .useful__item {
+        width: 537px;
+        gap: 40px;
+        @include display()
+    }
+}
+
+@media screen and (max-width: 672px){
+    .useful-section{
+        display: none;
+    }
+}

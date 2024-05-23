@@ -1,0 +1,46 @@
+:root{
+    --tt-color:rgb(107, 107, 108);
+    --title-color:rgb(54, 55, 56);
+}
+
+@mixin display($al:center , $js:center){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin allText(){
+    color: var(--tt-color);
+    font-family: PT Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+@mixin usefulTitle(){
+    color: var(--title-color);
+    font-family: Exo 2;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 135%;
+    letter-spacing: 0%;
+}
+
+@mixin successTitle(){
+    color: var(--title-color);
+    font-family: Exo 2;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: 0%;
+}
+
+@mixin itemTitle(){
+    color: var(--title-color);
+    font-family: Exo 2;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 135%;
+    letter-spacing: 0%;
+}
